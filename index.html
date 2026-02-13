@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ტექნიკის სია</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-graph">
+      <h2>ტექნიკის სია</h2>
+      <div>
+        <input
+          oninput="searchCards()"
+          type="text"
+          id="search-input"
+          placeholder="მოძებნე"
+        />
+      </div>
+      <div>
+        <input type="text" id="item-input" placeholder=" ნივთის დამატება" />
+        <button class="add-button" onclick="addNewItem()">დამატება</button>
+        <button class="add-button" onclick="addNewitemAtStart()">
+          თავში დამატება
+        </button>
+        <button class="add-button" onclick="deleteLastitem()">წაშლა</button>
+        <button class="add-button" onclick="deleteFirstitem()">
+          თავში წაშლა
+        </button>
+        <ul id="itemsList"></ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <h2>Iphone 17 Pro Max</h2>
+          <p>
+            პროცესორი: Apple GPU ეკრანის ზომა: 6.90 inches განახლების სიხშირე:
+            120 Hz შიდა მეხსიერება: 256 GB
+          </p>
+          <p>price: 3799 GEL</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <h2>Samsung S25 Ultra</h2>
+          <p>
+            პროცესორი: Adreno 830 ეკრანის ზომა: 6.90 inches განახლების სიხშირე:
+            120 Hz შიდა მეხსიერება: 256 GB
+          </p>
+          <p>price: 2799 GEL</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <h2>Pixel 10 Pro 5G</h2>
+          <p>
+            პროცესორი: Google Tensor ეკრანის ზომა: 6.30 inches განახლების
+            სიხშირე: 120 Hz შიდა მეხსიერება: 512 GB
+          </p>
+          <p>price: 3399 GEL</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    <script src="JavaSript/script.js"></script>
+  </body>
+</html>
+
